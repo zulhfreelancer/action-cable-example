@@ -8,7 +8,8 @@ class MessagesController < ApplicationController
 											'messages',
 											{
 												message: @message.content,
-												user: 	 @message.user.username
+												user: 	 @message.user.username,
+												room_id: @message.chatroom_id
 											}
 										)
 			head :ok
